@@ -1,0 +1,27 @@
+{
+  "name": "star-programmer-journal",
+  "version": "1.0.0",
+  "description": "A professional journal web application for programmers using the STAR format",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "STAR",
+    "journal",
+    "programmer",
+    "developer",
+    "productivity"
+  ],
+  "author": "Programmer Journal Team",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
